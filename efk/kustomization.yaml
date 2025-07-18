@@ -1,0 +1,6 @@
+resources:
+  - 1-namespace.yaml
+  - 2-elasticsearch-svc.yaml
+  - 3-elasticsearch-sts.yaml
+  - 4-kibana.yaml
+  - 5-fluentd.yaml

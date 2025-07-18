@@ -1,0 +1,4 @@
+resources:
+  - strimzi-cluster-operator-0.45.0.yaml  
+  - strimzi-rbac.yaml                     
+  - kafka-cluster.yaml                    

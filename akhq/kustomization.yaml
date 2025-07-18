@@ -1,0 +1,5 @@
+resources:
+  - akhq-configmap.yaml
+  - akhq.yaml
+  - akhq-service.yaml
+

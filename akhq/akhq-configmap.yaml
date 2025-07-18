@@ -1,0 +1,39 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: akhq-config
+  namespace: kafka
+data:
+  application.yml: |
+    akhq:
+      server:
+        port: 8085
+      connections:
+        my-cluster:
+          properties:
+            bootstrap.servers: "my-cluster-kafka-bootstrap.kafka:9092"
+            security:
+        default-group: no-roles
+        basic-auth:
+          admin:
+            password: "htgawm@@"
+            groups:
+              - admin
+          user1:
+            password: "userpass123"
+            groups:
+              - readonly
+      roles:
+        admin:
+          topics: ['*']
+          groups: ['*']
+          connect-clusters: ['*']
+          schemas: ['*']
+          registry-apis: ['*']
+          acls: ['*']
+          nodes: ['*']
+          consumer-groups: ['*']
+          connect: ['*']
+        readonly:
+          topics: ['my-topic']
+          groups: []

@@ -1,0 +1,10 @@
+namespace: kafka
+
+resources:
+  - bundle.yaml
+  - grafana.yaml
+  - prometheus-additional.yaml
+  - prometheus-rules.yaml
+  - prometheus.yaml
+  - strimzi-pod-monitor.yaml
+
