@@ -3,6 +3,8 @@
 Ce projet met en œuvre une architecture **GitOps** complète pour déployer **Apache Kafka** dans un cluster **Kubernetes**, en utilisant **ArgoCD** comme outil de livraison continue. Il intègre également des solutions d’observabilité et de gestion comme **Prometheus**, **Grafana**, **EFK** et **AKHQ**.
 
 ---
+![Architecture GitOps Kafka Strimzi + EFK + Monitoring](./annexe-gitops.png)
+
 ## 📁 Structure du projet
 ```bash
 kafka-argoCD/
